@@ -534,7 +534,7 @@ namespace CAM
 	NATIVE_DECL void SET_GAMEPLAY_HINT_FOLLOW_DISTANCE_SCALAR(float value) { invoke<void>(0xF8BDBF3D573049A1, value); }
 	NATIVE_DECL void SET_GAMEPLAY_HINT_FOV(float FOV) { invoke<void>(0x513403FB9C56211F, FOV); }
 	NATIVE_DECL void SET_GAMEPLAY_OBJECT_HINT(Any p0, float p1, float p2, float p3, BOOL p4, Any p5, Any p6, Any p7) { invoke<void>(0x83E87508A2CA2AC6, p0, p1, p2, p3, p4, p5, p6, p7); }
-	NATIVE_DECL void SET_GAMEPLAY_PED_HINT(Ped p0, float x1, float y1, float z1, BOOL p4, Any p5, Any p6, Any p7) { invoke<void>(0x2B486269ACD548D3, p0, x1, y1, z1, p4, p5, p6, p7); }
+	NATIVE_DECL void SET_GAMEPLAY_PED_HINT(Ped p0, float x1, float y1, float z1, BOOL p4, int duration, int blendOutDuration, int blendInDuration) { invoke<void>(0x2B486269ACD548D3, p0, x1, y1, z1, p4, duration, blendOutDuration, blendInDuration); }
 	NATIVE_DECL void SET_GAMEPLAY_VEHICLE_HINT(Vehicle vehicle, float offsetX, float offsetY, float offsetZ, BOOL p4, int time, int easeInTime, int easeOutTime) { invoke<void>(0xA2297E18F3E71C2E, vehicle, offsetX, offsetY, offsetZ, p4, time, easeInTime, easeOutTime); }
 	NATIVE_DECL void SET_IN_VEHICLE_CAM_STATE_THIS_UPDATE(Vehicle p0, int p1) { invoke<void>(0xE9EA16D6E54CDCA4, p0, p1); }
 	NATIVE_DECL void SET_THIRD_PERSON_AIM_CAM_NEAR_CLIP_THIS_UPDATE(float distance) { invoke<void>(0x42156508606DE65E, distance); }
@@ -6542,3 +6542,4 @@ namespace ZONE
 	NATIVE_DECL void OVERRIDE_POPSCHEDULE_VEHICLE_MODEL(int scheduleId, Hash vehicleHash) { invoke<void>(0x5F7D596BAC2E7777, scheduleId, vehicleHash); }
 	NATIVE_DECL void SET_ZONE_ENABLED(int zoneId, BOOL toggle) { invoke<void>(0xBA5ECEEA120E5611, zoneId, toggle); }
 }
+
