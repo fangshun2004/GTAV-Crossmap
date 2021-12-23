@@ -6540,4 +6540,3 @@ namespace ZONE
 	NATIVE_DECL void OVERRIDE_POPSCHEDULE_VEHICLE_MODEL(int scheduleId, Hash vehicleHash) { invoke<void>(0x5F7D596BAC2E7777, scheduleId, vehicleHash); }
 	NATIVE_DECL void SET_ZONE_ENABLED(int zoneId, BOOL toggle) { invoke<void>(0xBA5ECEEA120E5611, zoneId, toggle); }
 }
-
